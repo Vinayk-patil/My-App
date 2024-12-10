@@ -34,7 +34,7 @@ const TakeCare = () => {
                         textDecorationSkipInk: "none",
                     }}
                 >
-                    On s’occupe de <span style={{ color: "#5CD2DD" }}> tout </span>
+                    On s&apos;occupe de <span style={{ color: "#5CD2DD" }}> tout </span>
                 </h2>
 
                 {/* Subheading */}
@@ -195,7 +195,7 @@ const TakeCare = () => {
                                 marginTop: "4px",
                             }}
                         >
-                            On s’occupe de tout.
+                            On s&apos;occupe de.
                         </p>
                     </div>
                 </div>

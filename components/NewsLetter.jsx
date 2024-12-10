@@ -42,7 +42,7 @@ const NewsLetter = () => {
                             fontFamily: "Cabinet Grotesk",
                         }}
                     >
-                        S’inscrire & économiser <span style={{ color: "#5CD2DD" }}> 10% </span>
+                        S&apos;inscrire & économiser <span style={{ color: "#5CD2DD" }}> 10% </span>
                     </h2>
 
                     {/* Description */}
@@ -53,7 +53,7 @@ const NewsLetter = () => {
                         }}
                     >
                         Office ipsum you must be muted. Synergize helicopter prioritize
-                        anyway job due harvest most opportunity didn't. Yet busy any
+                        anyway job due harvest most opportunity didn&apos;t. Yet busy any
                         meeting shark light marginalised 4-blocker message. Productize
                         corporate nail caught synergy highlights lunch. Company another
                         pushback items dear or any.
