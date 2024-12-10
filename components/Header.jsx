@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from "next/image";
 import CustomImage from '../components/CustomImage';
+import Link from 'next/link';
+
 
 
 
@@ -98,15 +100,15 @@ const Header = () => {
             <div className="w-full px-8 py-2">
                 <div className="flex items-center text-sm text-gray-600 space-x-2">
                     {/* Home Link */}
-                    <a href="/" className="hover:text-blue-600">
+                    <Link href="/" className="hover:text-blue-600">
                         Home
-                    </a>
+                    </Link>
                     {/* Separator */}
                     <span className="text-gray-400">•</span>
                     {/* Current Page */}
-                    <a href="/art-de-la-table" className="hover:text-blue-600">
+                    <Link href="/art-de-la-table" className="hover:text-blue-600">
                         Art de la table
-                    </a>
+                    </Link>
                 </div>
             </div>
         </header>

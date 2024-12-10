@@ -2,6 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
+
 
 
 const Footer = () => {
@@ -38,7 +40,7 @@ const Footer = () => {
                         <h3 className="font-medium text-lg mb-4">INFOS PRATIQUES</h3>
                         <ul>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -49,10 +51,10 @@ const Footer = () => {
                                     }}
                                 >
                                     À propos
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -63,10 +65,10 @@ const Footer = () => {
                                     }}
                                 >
                                     Livraisons & Reprises
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -77,10 +79,10 @@ const Footer = () => {
                                     }}
                                 >
                                     Mode d’emploi
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -91,7 +93,7 @@ const Footer = () => {
                                     }}
                                 >
                                     F.A.Q
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -101,7 +103,7 @@ const Footer = () => {
                         <h3 className="font-medium text-lg mb-4">LÉGAL</h3>
                         <ul>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -112,10 +114,10 @@ const Footer = () => {
                                     }}
                                 >
                                     Mentions légales
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -126,10 +128,10 @@ const Footer = () => {
                                     }}
                                 >
                                     CGU
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -140,10 +142,10 @@ const Footer = () => {
                                     }}
                                 >
                                     CGV
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -154,7 +156,7 @@ const Footer = () => {
                                     }}
                                 >
                                     Politique de confidentialité
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -164,7 +166,7 @@ const Footer = () => {
                         <h3 className="font-medium text-lg mb-4">MON COMPTE</h3>
                         <ul>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -175,10 +177,10 @@ const Footer = () => {
                                     }}
                                 >
                                     Accéder à mon compte
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -189,10 +191,10 @@ const Footer = () => {
                                     }}
                                 >
                                     Ma liste d’envie
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -203,10 +205,10 @@ const Footer = () => {
                                     }}
                                 >
                                     Créer un compte
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="#"
                                     className="text-gray-600 hover:text-black"
                                     style={{
@@ -217,7 +219,7 @@ const Footer = () => {
                                     }}
                                 >
                                     Mot de passe oublié
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -234,7 +236,7 @@ const Footer = () => {
                 >
                     <h3 className="font-medium text-lg">NOUS SUIVRE</h3>
                     <div className="flex gap-4">
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                             <Image
                                 src="/images/twitter.png"
                                 alt="Facebook"
@@ -242,8 +244,8 @@ const Footer = () => {
                                 height={40}
                                 className="w-10 h1010"
                             />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        </Link>
+                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                             <Image
                                 src="/images/insta.png"
                                 alt="Instagram"
@@ -251,8 +253,8 @@ const Footer = () => {
                                 height={40}
                                 className="w-10 h-10"
                             />
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        </Link>
+                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                             <Image
                                 src="/images/linkedin.png"
                                 alt="LinkedIn"
@@ -260,7 +262,7 @@ const Footer = () => {
                                 height={40}
                                 className="w-10 h-10"
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

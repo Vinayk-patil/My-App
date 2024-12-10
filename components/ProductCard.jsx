@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from "next/image";
+import Link from 'next/link';
+
 
 
 const ProductDetails = () => {
@@ -13,7 +15,7 @@ const ProductDetails = () => {
                     {/* Vertical Links */}
                     <div className="absolute left-0 top-4 flex flex-col space-y-2 pl-2">
                         {['/images/product.png', '/images/product.png', '/images/product.png', '/images/product.png'].map((imgSrc, index) => (
-                            <a
+                            <Link
                                 key={index}
                                 href="#"
                                 className="w-14 h-14 border border-gray-300 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
@@ -25,17 +27,19 @@ const ProductDetails = () => {
                                     width={56} // Set width (14 * 4px = 56px, adjust accordingly)
                                     height={56} // Set height (14 * 4px = 56px, adjust accordingly)
                                 />
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
                     {/* Main Image */}
                     <div className="relative">
-                        <img
+                        <Image
                             src="/images/product-main.png"
                             alt="Cheese – appareil à raclette 1/2 roue"
                             className="h-full object-contain"
-                            style={{ width: "552px", height: "552px" }}
+                            width={552}  // Set the width of the image in pixels
+                            height={552}
+                            // style={{ width: "552px", height: "552px" }}
                         />
                         {/* Product Name Overlay
                         <div className="absolute top-2 left-2 bg-white bg-opacity-70 px-3 py-1 rounded-lg shadow-md">
