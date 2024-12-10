@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+
 
 const NewsLetter = () => {
     return (
@@ -15,9 +17,11 @@ const NewsLetter = () => {
                         opacity: "1", // Ensuring visibility
                     }}
                 >
-                    <img
+                    <Image
                         src="/images/subscribe.png"
                         alt="Newsletter"
+                        width={500} // Set the width in pixels
+                        height={300} // Set the height in pixels
                         className="w-full h-full object-cover rounded-[20px]" // Make image corners rounded
                     />
                 </div>
@@ -55,12 +59,13 @@ const NewsLetter = () => {
                         pushback items dear or any.
                     </p>
 
-                     {/* Input and Subscribe Button in One Line */}
-                     <div className="flex gap-4">
+                    {/* Input and Subscribe Button in One Line */}
+                    <div className="flex gap-4">
                         {/* Email Input */}
                         <input
                             type="email"
                             placeholder="Enter your email"
+                            defaultValue="Default text" // Use defaultValue for uncontrolled input
                             className="px-4 py-2 border border-gray-300 rounded-lg text-sm w-full"
                             style={{
                                 borderRadius: "10px",

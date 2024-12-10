@@ -1,6 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
+import CustomImage from '../components/CustomImage';
+
+
 
 const RecommendeProducts = () => {
     const products = [
@@ -52,7 +56,7 @@ const RecommendeProducts = () => {
         <div className="px-8 py-4 bg-white mt-8">
             {/* Section Header */}
             <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-bold text-gray-800">Articles similaires</h2>
+                <h2 className="text-xl font-bold text-gray-800">Ces produits pourraient vous intéresser</h2>
                 <button className="text-sm text-blue-600 hover:underline">
                     VOIR TOUTE LA COLLECTION
                 </button>
@@ -78,16 +82,19 @@ const RecommendeProducts = () => {
                             }}
                             className="overflow-hidden"
                         >
-                            <img
+                            <CustomImage
                                 src={product.image}
                                 alt={product.title}
                                 className="w-full h-full object-cover rounded-md transform transition-transform duration-500 ease-in-out hover:scale-110"
+                                width={133}  // Customize width
+                                height={65}  // Customize height,
                             />
                             {/* Heart Icon */}
                             <button
                                 className="absolute top-2 left-2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-md"
                             >
-                                <img src="/images/big-heart.png" alt="" />
+                                <CustomImage src="/images/big-heart.png" alt="" width={20} // Required width
+                                    height={20} />
                             </button>
                             {/* Badge */}
                             <div

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 
+
 const ProductDescription = () => {
     // State to toggle the visibility of additional information
     const [showDeliveryInfo, setShowDeliveryInfo] = useState(false);

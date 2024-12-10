@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+
 
 const TakeCare = () => {
     return (
@@ -55,7 +57,8 @@ const TakeCare = () => {
                     {/* Icon with Text */}
                     <div className="flex flex-col items-center">
                         <div className="w-12 h-12 bg-[#ffff] rounded-full flex items-center justify-center">
-                            <span className="text-white text-xl"><img src="/images/takeCare1.png" alt="" /></span>
+                            <span className="text-white text-xl"><Image src="/images/takeCare1.png" alt="" width={40} // Required width
+                            height={40} /></span>
                         </div>
                         <p
                             style={{
@@ -91,7 +94,8 @@ const TakeCare = () => {
                     {/* Icon with Text */}
                     <div className="flex flex-col items-center">
                         <div className="w-12 h-12 bg-[#ffff] rounded-full flex items-center justify-center">
-                            <span className="text-white text-xl"><img src="/images/takeCare2.png" alt="" /></span>
+                            <span className="text-white text-xl"><Image src="/images/takeCare2.png" alt="" width={40} // Required width
+                            height={40} /></span>
                         </div>
                         <p
                             style={{
@@ -127,7 +131,8 @@ const TakeCare = () => {
                     {/* Icon with Text */}
                     <div className="flex flex-col items-center">
                         <div className="w-12 h-12 bg-[#ffff] rounded-full flex items-center justify-center">
-                            <span className="text-white text-xl"><img src="/images/takeCare3.png" alt="" /></span>
+                            <span className="text-white text-xl"><Image src="/images/takeCare3.png" alt="" width={40} // Required width
+                            height={40} /></span>
                         </div>
                         <p
                             style={{
@@ -163,7 +168,8 @@ const TakeCare = () => {
                     {/* Icon with Text */}
                     <div className="flex flex-col items-center">
                         <div className="w-12 h-12 bg-[#ffff] rounded-full flex items-center justify-center">
-                            <span className="text-white text-xl"><img src="/images/takeCare4.png" alt="" /></span>
+                            <span className="text-white text-xl"><Image src="/images/takeCare4.png" alt="" width={40} // Required width
+                            height={40} /></span>
                         </div>
                         <p
                             style={{

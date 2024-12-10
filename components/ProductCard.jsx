@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from "next/image";
+
 
 const ProductDetails = () => {
     return (
@@ -16,10 +18,12 @@ const ProductDetails = () => {
                                 href="#"
                                 className="w-14 h-14 border border-gray-300 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
                             >
-                                <img
+                                <Image
                                     src={imgSrc}
                                     alt={`Product ${index + 1}`}
                                     className="w-full h-full object-cover"
+                                    width={56} // Set width (14 * 4px = 56px, adjust accordingly)
+                                    height={56} // Set height (14 * 4px = 56px, adjust accordingly)
                                 />
                             </a>
                         ))}
@@ -31,7 +35,7 @@ const ProductDetails = () => {
                             src="/images/product-main.png"
                             alt="Cheese – appareil à raclette 1/2 roue"
                             className="h-full object-contain"
-                            style={{width:"552px", height:"552px"}}
+                            style={{ width: "552px", height: "552px" }}
                         />
                         {/* Product Name Overlay
                         <div className="absolute top-2 left-2 bg-white bg-opacity-70 px-3 py-1 rounded-lg shadow-md">
@@ -51,7 +55,8 @@ const ProductDetails = () => {
                             Cheese – appareil à raclette 1/2 roue
                         </h1>
                         <button className="text-gray-600 hover:text-red-500">
-                        <img src="/images/big-heart.png" alt="" /> {/* Heart icon for like */}
+                            <Image src="/images/big-heart.png" alt="" width={20} // Required width
+                                height={20} /> {/* Heart icon for like */}
                         </button>
                     </div>
 
@@ -66,11 +71,13 @@ const ProductDetails = () => {
                         <div className="flex justify-between items-center text-gray-600">
                             <div className="flex space-x-4">
                                 <div className="flex items-center space-x-2">
-                                    <span><img src="/images/Capa_1.png" alt="" /></span>
+                                    <span><Image src="/images/Capa_1.png" alt="" width={20} // Required width
+                                        height={20} /></span>
                                     <span>20 cm</span>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <span><img src="/images/Frame.png" alt="" /></span>
+                                    <span><Image src="/images/Frame.png" alt="" width={20} // Required width
+                                        height={20} /></span>
                                     <span>50 cm</span>
                                 </div>
                             </div>
@@ -101,7 +108,8 @@ const ProductDetails = () => {
                             <button className="px-4 py-2 bg-gray-200 text-gray-600 rounded-l-lg">-</button>
                             <input
                                 type="text"
-                                value="1"
+                                // value ="1"
+                                defaultValue="Default text" // Use defaultValue for uncontrolled input
                                 className="w-12 text-center text-gray-600 focus:outline-none"
                             />
                             <button className="px-4 py-2 bg-gray-200 text-gray-600 rounded-r-lg">+</button>

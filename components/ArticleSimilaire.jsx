@@ -1,6 +1,10 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+import Image from "next/image";
+import CustomImage from '../components/CustomImage';
+
+
 
 const ArticleSimilaire = () => {
     const products = [
@@ -103,20 +107,19 @@ const ArticleSimilaire = () => {
                                 }}
                                 className=" overflow-hidden" // To ensure the zoom effect stays within bounds
                             >
-                                <img
+                                <CustomImage
                                     src={product.image}
                                     alt={product.title}
                                     className="w-full h-full object-cover rounded-md transform transition-transform duration-500 ease-in-out hover:scale-90"
-                                    style={{
-                                        height: "224px",
-                                        width: "224px",
-                                    }}
+                                    width={133}  // Customize width
+                                    height={65}  // Customize height
                                 />
                                 {/* Heart Icon */}
                                 <button
                                     className="absolute top-2 left-2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-md"
                                 >
-                                    <img src="/images/big-heart.png" alt="" />
+                                    <CustomImage src="/images/big-heart.png" alt="" width={20} // Required width
+                                        height={20} />
                                 </button>
                                 {/* Badge */}
                                 <div

@@ -1,4 +1,8 @@
 import React from 'react';
+import Image from "next/image";
+import CustomImage from '../components/CustomImage';
+
+
 
 const Header = () => {
     return (
@@ -7,10 +11,12 @@ const Header = () => {
             <div className="w-full flex justify-between items-center px-8 py-4 bg-white">
                 {/* Left: Logo */}
                 <div className="flex items-center space-x-2">
-                    <img
+                    <Image
                         src="/images/logo.png"
                         alt="Logo"
-                        className="w-[133.01px] h-[65px] top-[33px] left-[29px] opacity-100" // Applied styles to the logo
+                        width={133.01} // Required width
+                        height={65} // Required height
+                        className="w-[133.01px] h-[65px] top-[33px] left-[29px] opacity-100"
                     />
                     {/* <span className="font-bold text-lg">weframetech</span> */}
                 </div>
@@ -21,11 +27,13 @@ const Header = () => {
                         <input
                             type="text"
                             placeholder="Rechercher un produit"
+                            defaultValue="Default text" // Use defaultValue for uncontrolled input
                             className="w-full p-2 border rounded-lg bg-gray-100 text-gray-600 pr-10"
                         />
                         {/* Search Icon */}
                         <div className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400">
-                            <img src="/images/search-icon.png" alt="" />
+                            <Image src="/images/search-icon.png" alt="" width={20} // Required width
+                            height={20} />
                         </div>
                     </div>
                 </div>
@@ -34,20 +42,21 @@ const Header = () => {
                 <div className="flex items-center space-x-6">
                     {/* Inspiration */}
                     <div className="flex items-center space-x-2 cursor-pointer">
-                        <span><img src="/images/lightbulb-01.png" alt="" /></span>
+                        <span><Image src="/images/lightbulb-01.png" alt="" width={20} // Required width
+                            height={20} /></span>
                         <span>Inspirations</span>
                     </div>
 
                     {/* Favorites */}
                     <div className="flex items-center space-x-2 cursor-pointer">
-                        <span><img src="/images/heart.png" alt="" /></span>
+                        <span><CustomImage src="/images/heart.png" alt="" /></span>
                         <span>Mes favoris</span>
                         <span className="bg-gray-200 rounded-full px-2 text-xs">24</span>
                     </div>
 
                     {/* Cart */}
                     <div className="flex items-center cursor-pointer bg-[#0093D0] text-white px-4 py-2 rounded-lg">
-                        <span className="mr-2"><img src="/images/shopping.png" alt="" /></span> {/* Emoji with margin right */}
+                        <span className="mr-2"><CustomImage src="/images/shopping.png" alt="" layout="intrinsic" /></span> {/* Emoji with margin right */}
                         <span>Panier</span> {/* Text */}
                     </div>
 

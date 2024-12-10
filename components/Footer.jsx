@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+
 
 const Footer = () => {
     return (
@@ -22,9 +24,11 @@ const Footer = () => {
                 >
                     {/* First Column: Logo */}
                     <div className="w-1/4">
-                        <img
+                        <Image
                             src="/images/logo.png" // Replace with actual logo path
                             alt="Logo"
+                            width={133}  // Set the desired width of the image in pixels
+                            height={65}  // Set the desired height of the image in pixels
                             className="w-full h-auto"
                         />
                     </div>
@@ -230,24 +234,30 @@ const Footer = () => {
                 >
                     <h3 className="font-medium text-lg">NOUS SUIVRE</h3>
                     <div className="flex gap-4">
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <Image
                                 src="/images/twitter.png"
                                 alt="Facebook"
+                                width={40}  // Set the width of the image in pixels
+                                height={40}
                                 className="w-10 h1010"
                             />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <img
+                            <Image
                                 src="/images/insta.png"
                                 alt="Instagram"
+                                width={40}  // Set the width of the image in pixels
+                                height={40}
                                 className="w-10 h-10"
                             />
                         </a>
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <img
+                            <Image
                                 src="/images/linkedin.png"
                                 alt="LinkedIn"
+                                width={40}  // Set the width of the image in pixels
+                                height={40}
                                 className="w-10 h-10"
                             />
                         </a>
